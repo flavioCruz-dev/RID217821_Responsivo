@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+/* ========== HEADER ========== */
+.header-container {
+  background-color: #02A28F;
+  color: white;
+  padding: 0.8125rem 0 0.8125rem 9.75rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+/* ========== MAIN WRAPPER ========== */
+.main-wrapper {
+  max-width: 100%;
+  margin: 3.125rem 9.6875rem 1.5rem 9.75rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  max-height: 24.75rem;
+  border-radius: 0.625rem;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 24.75rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);
+  color: white;
+}
+
+.hero-tag {
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* ========== RECENT POSTS ========== */
+.recent-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6875rem;
+}
+
+.section-title {
+  background-color: #02A28F;
+  color: white;
+  padding: 1rem 0 1rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.section-title h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.section-title a {
+  color: white;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  padding-right: 1.5rem;
+}
+
+/* ========== POSTS GRID ========== */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.post-card {
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 0.625rem 0.625rem 0 rgba(0,2,8,0.08);
+  border-radius: 1rem;
+}
+
+.post-card img {
+  width: 100%;
+  height: 11.25rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.post-content {
+  padding: 1rem;
+}
+
+.post-tag {
+  color: #02A28F;
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  line-height: 100%;
+}
+
+.post-author {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 0.5rem;
+}
+
+.post-text {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  line-height: 100%;
+  text-align: left;
+}
+
+.post-date {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #616161;
+}
+
+/* ========== SIDEBAR ========== */
+.sidebar {
+  max-width: 22.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.sidebar-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  background-color: #02A28F;
+  border-radius: 0.625rem;
+  color: white;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.sidebar-item {
+  display: flex;
+  gap: 0.75rem;
+  border-radius: 0.625rem;
+  padding: 0.8125rem 0 0.8125rem 0.75rem;
+  margin-top: 1.25rem;
+  align-items: flex-start;
+  box-shadow: 0 0.5rem 0.625rem 0 rgba(0,5,15,0.08);
+}
+
+.sidebar-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0.8125rem;
+}
+
+.sidebar-item img {
+  width: 8.25rem;
+  height: 4.375rem;
+  object-fit: cover;
+  border-radius: 0.625rem;
+  flex-shrink: 0;
+}
+
+.sidebar-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar-text h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.sidebar-text p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #616161;
+}
+
+/* ========== CATEGORIES ========== */
+.sidebar-categories {
+  padding-top: 0.875rem;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.875rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #616161;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #02A28F;
+  color: white;
+  text-align: center;
+  padding: 0.96875rem 0;
+  margin-top: 4.0625rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* ========================================
+   RESPONSIVIDADE - MOBILE (até 768px)
+======================================== */
+@media (max-width: 768px) {
+
+body {
+  padding: 0 0.5rem; /* 8px nas laterais de TUDO */
+}
+
+.header-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.main-wrapper {
+  margin: 1.5rem 0rem;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.main-content {
+  gap: 1.5rem;
+}
+
+.hero {
+  max-height: 24.75rem;
+  border-radius: 0;
+}
+
+.hero > img {
+  max-height: 24.75rem;
+}
+
+.hero-content {
+  padding: 1.5rem;
+}
+  
+.hero-content > h2 {
+  font-size: 1.5rem;
+}
+  
+.hero-content > p {
+  font-size: 1rem;
+}
+
+.recent-posts {
+  gap: 0;
+}
+
+.section-title {
+  border-radius: 0.625rem;
+  margin: 0;
+  width: 100%;
+}
+
+.posts-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-top: 1.5rem 1rem;
+}
+
+.post-card {
+  border-radius: 0.625rem;
+}
+
+.post-content {
+  padding: 1rem;
+}
+
+.sidebar {
+  max-width: 100%;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.sidebar-box {
+  margin-bottom: 0rem;
+}
+
+.sidebar-title {
+  border-radius: 0.625rem;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-posts {
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.sidebar-item {
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.sidebar-item:first-child {
+  margin-bottom: 0;
+}
+
+.sidebar-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0.8125rem;
+}
+
+.sidebar-categories {
+  padding: 1rem 1.5rem;
+}
+
+.category-item {
+  text-align: left;
+}
+
+footer {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+}
+
+/* ========================================
+   TABLET (769px - 1024px)
+======================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+.header-container {
+  padding: 1rem 0 1rem 3rem;
+  font-size: 2rem;
+}
+
+.main-wrapper {
+  margin: 2rem 2rem 1.5rem 2rem;
+}
+
+.sidebar {
+  max-width: 18rem;
+}
+}
+
+/* ========================================
+   DESKTOP (1025px - 1440px)
+======================================== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+.header-container {
+  padding: 0.8125rem 0 0.8125rem 6rem;
+}
+
+.main-wrapper {
+  margin: 3rem 6rem 1.5rem 6rem;
+}
+}
+
+/* ========================================
+   ULTRAWIDE (1441px - 2560px)
+======================================== */
+@media (min-width: 1441px) {
+.header-container {
+  padding: 0.8125rem 0 0.8125rem 9.75rem;
+}
+.main-wrapper {
+  margin: 3.125rem 9.6875rem 1.5rem 9.75rem;
+  max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
